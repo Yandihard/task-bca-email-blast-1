@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    /* or 167% */
+
+
+    /* Shades & Tint/Dark 30 */
+
+    color: #212529;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1 {
+    font-size: 1.5rem;
+}
+
+h2 {
+    font-size: 1.2rem;
+}
+
+h3 {
+    font-size: 1.2rem;
+}
+
+.text-justify p,
+ol>li {
+    line-height: 1.3;
+}
+
+ol>ol li:last-child,
+ul li:last-child {
+    margin-bottom: 12px;
+}
+
+.parent-list>li {
+    margin-top: 12px;
+}
+
+.container {
+    max-width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.center {
+    text-align: center;
+}
+
+.title {
+    display: flex;
+}
+
+.title h1 {
+    flex-grow: 1;
+}
+
+
+
+.text-box {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 18px;
+    /* identical to box height, or 150% */
+    /* Primary/20 */
+    color: #144E83;
+}
+
+.row {
+    display: flex;
+}
+
+.col {
+    min-width: 100px;
+}
+
+h2 {
+    width: 320px;
+    height: 30px;
+    left: 20px;
+    top: 75px;
+
+    /* Heading / 04 */
+    font-style: normal;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 30px;
+
+    /* identical to box height, or 143% */
+
+    /* Primary/20 */
+    color: #144E83;
+}
+
+.footer-contact {
+    display: flex;
+}
+
+.justify-around {
+    justify-content: space-around;
+    width: 100%;
+}
+
+.justify-evenly {
+    justify-content: space-evenly;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.img-ojk-mobile {
+    display: none;
+}
+
+.col.mobile {
+    min-width: 100px;
+    align-self: center;
+    flex-grow: 1;
+}
+
+.social {
+    gap: 25px;
+    display: flex;
+}
+
+@media (max-width:700px) {
+    .col {
+        min-width: 50px;
+    }
+
+    .title {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .container {
+        margin: 10px 10px;
+    }
+
+    .footer-contact .row.justify-around {
+        flex-direction: column;
+    }
+
+    .footer-contact .row.justify-evenly {
+        flex-direction: column-reverse;
+        margin-top: 10px;
+    }
+
+    .img-ojk {
+        display: none;
+    }
+
+    .img-ojk-mobile {
+        display: block;
+    }
+
+    .mobile {
+        margin-top: 10px;
+    }
+
+    .social {
+        gap: 8px;
+        display: flex;
+    }
+
+}
+
+.bg-banner {
+    max-width: 100%;
+    height: 325px;
+    background: #F3F1F4;
+}
